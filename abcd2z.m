@@ -20,9 +20,9 @@ for f=1:Nf
 
     C_inv = inv(C);
     Z11 = A * C_inv;
-    Z12 = B - A * C_inv * D;
+    Z12 = A * C_inv * D - B;
     Z21 = C_inv;
-    Z22 = -C_inv * D;
+    Z22 = C_inv * D;
 
   z(:,:,f) = [Z11 Z12; Z21 Z22];
 end

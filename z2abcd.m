@@ -25,10 +25,10 @@ for f=1:Nf
 
   Z21_inv = inv(Z21);
 
-  C = Z21_inv;
   A = Z11 * Z21_inv;
-  D = -Z21_inv * Z22;
-  B = Z12 - Z11 * Z21_inv * Z22;
+  B = Z11 * Z21_inv * Z22 - Z12;
+  C = Z21_inv;
+  D = Z21_inv * Z22;
 
   abcd(:,:,f) = [A B; C D];
 end

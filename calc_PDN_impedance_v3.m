@@ -37,8 +37,8 @@ himd = 1e-6;
 t_metal = 1e-6;
 grid_width = 40e-6;
 grid_spacing = 100e-6;
-M_grid = 20;
-N_grid = 20;
+M_grid = 50;
+N_grid = 50;
 in_port_grid = M_grid+N_grid/2;
 out_port_grid = in_port_grid+4*M_grid;
 %% TSV array Parameters
